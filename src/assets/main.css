@@ -1,35 +1,119 @@
 @import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
+@layer base {
   body {
-    display: flex;
-    place-items: center;
+    background-color: #090e34;
+    color: white;
+    font-family: 'K2D', sans-serif;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .principal-color {
+    color: #ffc700;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  .principal-border {
+    border-color: #ffc700;
   }
+
+  .font-title {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .second-font {
+    font-family: 'Libre Baskerville', serif;
+  }
+
+  .img-backdrop {
+    height: 80vh;
+  }
+
+  .w-220 {
+    width: 200px;
+  }
+
+  .h-330 {
+    height: 330px;
+  }
+
+  .m-text-list {
+    margin-top: -8em;
+  }
+
+  .zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
+
+  .video {
+    width: 19em;
+    height: 20em;
+  }
+
+  .video-lg {
+    width: 55em;
+    height: 30em;
+  }
+
+  .video-md {
+    width: 40em;
+    height: 30em;
+  }
+
+
+}
+
+
+/* .Page{
+  font-size: 2em !important;
+  color: white !important;
+ } */
+ .Page ,.DotsHolder{
+  width: 30px !important;
+  height: 30px !important;
+  margin: 0 2px !important;
+  border-radius:5px !important;
+  color: #fff !important;
+  font-size: 18px !important;
+}
+
+.Page:hover{
+  color: #ffc700 !important;
+  border: none !important;
+}
+
+.Control {
+
+  width: 30px !important;
+  height: 30px !important;
+  margin: 0 2px !important;
+  fill: #BBBBBB;
+}
+
+.Control-active {
+  fill: #fff !important;
+}
+
+.Control-active:hover{
+  fill: #ffc700 !important;
+}
+
+ .Page-active {
+   border: none !important;
+}
+
+.Page-active:hover {
+  color: #fff !important;
 }

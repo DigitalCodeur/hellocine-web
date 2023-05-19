@@ -1,6 +1,7 @@
 <script setup>
 import ListingComponent from "../components/ListingComponent.vue";
 import NavComponent from "../components/NavComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import NavComponent from "../components/NavComponent.vue";
       />
     </div>
   </main>
+  <FooterComponent />
 </template>
 
 <script>
@@ -33,7 +35,7 @@ export default {
   data() {
     return {
       listing: [],
-      overviewNone:true,
+      overviewNone: true,
       page: 1,
       totalPage: 1,
       key: "87ef0d000bb1818cfb178b93bd60f415",

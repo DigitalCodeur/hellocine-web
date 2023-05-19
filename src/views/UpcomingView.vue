@@ -1,7 +1,6 @@
 <script setup>
 import NavComponent from "../components/NavComponent.vue";
-// import HeaderComponent from "../components/HeaderComponent.vue";
-// import ListingComponent from "../components/ListingComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
 </script>
 
 <template>
@@ -110,6 +109,7 @@ import NavComponent from "../components/NavComponent.vue";
       @update:modelValue="updateHandler"
     />
   </div>
+  <FooterComponent />
 </template>
 
 <script>

@@ -1,11 +1,13 @@
 <script setup>
 import DetailComponent from "../components/DetailComponent.vue";
 import NavComponent from "../components/NavComponent.vue";
+import FooterComponent from "../components/FooterComponent.vue";
 </script>
 
 <template>
   <NavComponent />
   <DetailComponent :detail="detail" :videos="videos" :casts="casts" :media="media" />
+  <FooterComponent />
 </template>
 
 <script>
